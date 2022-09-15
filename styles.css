@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
+:root{
+  scroll-behavior: smooth;
+}
+
 html {
   color: white;
   margin: 0;
@@ -8,7 +12,10 @@ html {
   box-sizing: border-box;
   background-color: rgb(0, 0, 0);
 }
-
+body{
+  display:flex;
+  flex-direction: column;
+}
 footer {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -26,6 +33,16 @@ main{
   flex-direction: column;
 }
 
+.scroll{
+  text-align: center;
+
+}
+
+.scroll a{
+  color: rgb(218,105,43);
+  text-decoration: none;
+}
+
 #contenedor-derecho {
   width: 50%;
   display: flex;
@@ -39,6 +56,8 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {

@@ -17,10 +17,12 @@
           <h1>
             YATAY<br />
             <span>RESTÓ-BAR</span>
+            
           </h1>
-          <!-- MEJORAR SCROLL DOWN  -->
-          <a href="#telefono">ir al fondo</a>
+          <section class="scroll"><a href="#telefono">- bajar -</a></section>
+          
         </section>
+        
         <!--  -->
 
         <section id="entradas">
@@ -108,26 +110,26 @@
       <label for="apellido">Apellido</label><br>
       <input type="text" id="apellido" name="apellido" placeholder="apellido" required><br>
       <label for="telefono" >Teléfono</label><br>
-      <input type="tel" id="telefono" placeholder="011-3679-5691" pattern="[0-9]{3}+-[0-9]{4}-[0-9]{4}" required>
+      <input type="tel" id="telefono" placeholder="1136795697" pattern="[0-9]{3}+-[0-9]{4}-[0-9]{4}" required>
       <br>
       <label for="mail">Mail</label><br>
-      <input type="text" id="mail" name="mail" placeholder="e-mail" required>
+      <input type="text" id="mail" name="email" placeholder="e-mail" required>
       <label for="number">Cantidad de comensales:</label>
       <input type="number" id="cantidad" name="cantidad" min="1" max="15">
 
       <label for="fecha">Fecha:</label>
-      <input type="date" id="fecha" name="fecha">
+      <input type="date" id="fecha" name="fecha" required>
 
       <label for="appt">Elegi hora:</label>
-      <input type="time" id="appt" name="appt">
+      <input type="time" id="appt" name="appt" required>
       <!-- espacio para dejar mensaje  -->
       <br>
-      <button>ENVIAR</button>
+      <button onclick="enviarDatos()">ENVIAR</button>
     </form>
    
 
-   <!-- MEJORAR SCROLL UP  -->
-   <a href="#">ir arriba</a>
+   
+   <section class="scroll"><a href="#"> -subir -</a></section>
     <footer>
 
       <ul>
@@ -137,5 +139,6 @@
         <li><a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
        </ul>
     </footer>
+    <script src="/script/código.js"></script>
   </body>
 </html>
