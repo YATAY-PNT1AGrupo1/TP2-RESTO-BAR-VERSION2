@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESTÓ-BAR GRUPO 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <main>
+      <div class="contenedor-izquierdo">
+        <!--  -->
+        <section id="titulo">
+          <h1>
+            YATAY<br />
+            <span>RESTÓ-BAR</span>
+            
+          </h1>
+          <section class="scroll"><a href="#telefono">- bajar -</a></section>
+          
+        </section>
+        
+        <!--  -->
+
+        <section id="entradas">
+          <h2>ENTRADAS</h2>
+          <div class id="opcion">
+            <h3>ENSALADA RUSA <span id="precio">$400</span></h3>
+            <p>Ensalada rusa clasica.</p>
+          </div>
+          <h3>NUGGETS DE POLLO <span id="precio">$500</span></h3>
+          <p>Pollo rebosado con finas hierbas.</p>
+          <h3>BERENJENA AL ESCABECHE <span id="precio">$350</span></h3>
+          <p>Berenjenas especiales de la casa, al escabeche.</p>
+          <h3>PICADA<span id="precio">$700</span></h3>
+          <p>Variedad de fiambres y panes.</p>
+        </section>
+        <!--  -->
+        <section id="guarniciones">
+          <h2>GUARNICIONES</h2>
+          <div>
+            <p>PAPAS FRITAS<span id="precio">$550</span></p>
+            <p>PAPAS CON PIMIENTA<span id="precio">$590</span></p>
+            <p>ENSALADA VERDE<span id="precio">$390</span></p>
+            <p>COLESLAW<span id="precio">$350</span></p>
+            <p>PAPA RELLENA<span id="precio">$420</span></p>
+            <p>AROS DE CEBOLLA<span id="precio">$300</span></p>
+            <p>GARBANZOS FRITOS<span id="precio">$400</span></p>
+          </div>
+        </section>
+        <!--  -->
+        <section id="postres">
+          <h2>POSTRES</h2>
+          <div>
+            <p>BANANA SPLIT<span id="precio">$250</span></p>
+            <p>LEMON PIE<span id="precio">$360</span></p>
+            <p>CHOCOTORTA<span id="precio">$360</span></p>
+            <p>COPA DE HELADO<span id="precio">$400</span></p>
+            <p>ENSALADA DE FRUTAS<span id="precio">$320</span></p>
+            <p>COPA "YATAY"<span id="precio">$500</span></p>
+          </div>
+        </section>
+      </div>
+      <!--  -->
+      <div id="contenedor-derecho">
+        <div id="imagen1">
+          <img src="images/imagen1.webp" />
+        </div>
+        <!--  -->
+        <section id="principales">
+          <h2>PRINCIPALES</h2>
+          <div class id="opcion">
+            <h3>PASTEL DE PAPA <span id="precio">$1500</span></h3>
+            <p>Pastel de carne con fina salsa de champiñones y tomillo.</p>
+            <h3>PAELLA <span id="precio">$2500</span></h3>
+            <p>Típico arroz valenciano con variedad de mariscos.</p>
+            <h3>SALMON CON PAPAS <span id="precio">$2500</span></h3>
+            <p>Lomo de salmon rosado con guarnición.</p>
+            <h3>POLLO AL CHAMPIÑON <span id="precio">$1500</span></h3>
+            <p>Supremas de pollo con salsa de champiñones.</p>
+          </div>
+        </section>
+        <!--  -->
+        <div id="imagen2">
+          <img src="images/carne.jpg" />
+        </div>
+        <!--  -->
+        <br />
+        <section id="bebidas">
+          <h2>BEBIDAS</h2>
+          <div id="listabebidas">
+            <h3>TRAGOS ELABORADOS<span id="precio">$700</span></h3>
+            <h3>CERVEZA<span id="precio">$450</span></h3>
+            <h3>COPA DE VINO<span id="precio">$500</span></h3>
+            <h3>SIDRA<span id="precio">$650</span></h3>
+            <h3>JUGO FRESCO<span id="precio">$400</span></h3>
+            <h3>TÉ O CAFÉ<span id="precio">$300</span></h3>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FORMULARIO -- mejorar estilos y detalles de validacion-->
+    <form autocomplete="on">
+      <h3>HAGA SU RESERVA!</h3>
+      <label for="nombre">Nombre</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="nombre" required><br>
+      <label for="apellido">Apellido</label><br>
+      <input type="text" id="apellido" name="apellido" placeholder="apellido" required><br>
+      <label for="telefono" >Teléfono</label><br>
+      <input type="tel" id="telefono" placeholder="1136795697" pattern="[0-9]{3}+-[0-9]{4}-[0-9]{4}" required>
+      <br>
+      <label for="mail">Mail</label><br>
+      <input type="text" id="mail" name="email" placeholder="e-mail" required>
+      <label for="number">Cantidad de comensales:</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" max="15">
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="appt">Elegi hora:</label>
+      <input type="time" id="appt" name="appt" required>
+      <!-- espacio para dejar mensaje  -->
+      <br>
+      <button onclick="enviarDatos()">ENVIAR</button>
+    </form>
+   
+
+   
+   <section class="scroll"><a href="#"> -subir -</a></section>
+    <footer>
+
+      <ul>
+        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
+       </ul>
+    </footer>
+    <script src="/script/código.js"></script>
+  </body>
+</html>
