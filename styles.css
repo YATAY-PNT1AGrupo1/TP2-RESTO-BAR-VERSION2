@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
-:root{
+:root {
   scroll-behavior: smooth;
 }
 
@@ -14,8 +14,8 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-body{
-  display:flex;
+body {
+  display: flex;
   flex-direction: column;
 }
 
@@ -24,7 +24,7 @@ footer {
   margin-bottom: 50px;
 }
 
-main{
+main {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
@@ -36,14 +36,13 @@ main{
   flex-direction: column;
 }
 
-.scroll{
+.scroll {
   text-align: center;
   letter-spacing: 4px;
-
 }
 
-.scroll a{
-  color: rgb(218,105,43);
+.scroll a {
+  color: rgb(218, 105, 43);
   text-decoration: none;
 }
 
@@ -189,18 +188,18 @@ li a {
   font-size: 25px;
 }
 
-form{
+form {
   text-align: center;
   justify-content: space-around;
   padding: 40px;
 }
-form h3{
-  color: rgb(218,105,43);
+form h3 {
+  color: rgb(218, 105, 43);
   letter-spacing: 4px;
 }
 
-form button{
-  margin:10px;
+form button {
+  margin: 10px;
   font-family: "Roboto", sans-serif;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.192);
@@ -208,22 +207,20 @@ form button{
   border-radius: 5px;
   font-weight: bolder;
 }
-form button:hover{
+form button:hover {
   color: rgba(218, 104, 43, 0.378);
 }
 
-form input{
+form input {
   border-radius: 5px;
   border-style: none;
   padding: 5px;
 }
 
-
-input{
-  margin:10px;
+input {
+  margin: 10px;
 }
 #footer a:hover {
- 
   color: white;
 }
 
@@ -234,8 +231,6 @@ ul {
   list-style: none;
 }
 
-#telefono{
+#telefono {
   scroll-behavior: smooth;
-};
-
-
+}
